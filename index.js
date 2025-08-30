@@ -26,5 +26,12 @@ bot.on("login", () => {
 
 bot.on("end", () => {
   console.log("Bot disconnected, retrying...");
-  setTimeout(() => bot.connect(), 5000);
-});
+ setTimeout(() => {
+  console.log("Reconnecting bot...");
+  bot = mineflayer.createBot({
+    host: process.env.SERVER_IP,   // server ka IP
+    port: process.env.SERVER_PORT, // port agar alag hai
+    username: process.env.BOT_EMAIL || "MyBot", // bot ka username/email
+    auth: "microsoft" // agar microsoft login hai
+  });
+}, 5000);
