@@ -1,7 +1,7 @@
 {
-  "name": "minecraft-bot",
+  "name": "afk-bot",
   "version": "1.0.0",
-  "description": "Minecraft bot using mineflayer",
+  "description": "Minecraft AFK Bot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -11,3 +11,6 @@
     "express": "^4.18.2"
   }
 }
+git add package.json
+git commit -m "Added package.json for Render deploy"
+git push origin main
