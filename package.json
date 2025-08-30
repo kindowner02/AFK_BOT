@@ -1,12 +1,13 @@
 {
   "name": "afk-bot",
   "version": "1.0.0",
-  "description": "Minecraft AFK Bot using mineflayer",
+  "description": "Minecraft AFK Bot with Express ping server",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "mineflayer": "^4.15.0"
+    "mineflayer": "^4.15.0",
+    "express": "^4.18.2"
   }
 }
