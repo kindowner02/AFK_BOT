@@ -28,6 +28,3 @@ bot.on("end", () => {
   console.log("Bot disconnected, retrying...");
   setTimeout(() => bot.connect(), 5000);
 });
-git add package.json
-git commit -m "added package.json"
-git push origin main
